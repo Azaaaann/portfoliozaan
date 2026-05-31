@@ -1,0 +1,7 @@
+# Browser profiling data (contains sensitive credentials/cookies)
+.edge-profile/
+
+# OS system files
+Thumbs.db
+Desktop.ini
+.DS_Store

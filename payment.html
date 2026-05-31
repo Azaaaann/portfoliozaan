@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment | Denzi</title>
+    <meta name="description" content="Payment page for Denzi thumbnail design plans." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="payment-body">
+    <header class="site-header payment-header">
+      <a class="brand" href="index.html#plans" aria-label="Back to plans">
+        <span class="brand-mark">DZ</span>
+        <span>Denzi</span>
+      </a>
+      <a class="button ghost payment-back" href="index.html#plans">Back to Plans</a>
+    </header>
+
+    <main class="payment-shell">
+      <section class="payment-hero scroll-3d is-visible" aria-labelledby="payment-title">
+        <div>
+          <p class="section-label">Checkout</p>
+          <h1 id="payment-title">Complete your thumbnail order</h1>
+          <p>
+            Confirm the selected package, add your project details, and send the payment
+            confirmation to Denzi.
+          </p>
+        </div>
+
+        <aside class="payment-summary">
+          <span>Selected Plan</span>
+          <h2 id="selected-plan">Starter Plan</h2>
+          <strong id="selected-price">Rs. 99</strong>
+        </aside>
+      </section>
+
+      <!-- Step indicators -->
+      <div class="checkout-steps scroll-3d is-visible">
+        <div class="step-item active" id="step-1-indicator">
+          <span class="step-number">1</span>
+          <span class="step-text">Scope</span>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step-item" id="step-2-indicator">
+          <span class="step-number">2</span>
+          <span class="step-text">Payment</span>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step-item" id="step-3-indicator">
+          <span class="step-number">3</span>
+          <span class="step-text">Confirm</span>
+        </div>
+      </div>
+
+      <section class="checkout-grid">
+        <form class="payment-form" id="payment-form">
+          <div>
+            <span class="step-header-label">Step 1</span>
+            <h2 style="font-size: 1.8rem; margin-top: 4px;">Project Scope</h2>
+          </div>
+          <div class="form-row">
+            <label for="client-name">Your Name</label>
+            <input id="client-name" name="client-name" type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="form-row">
+            <label for="client-email">Email</label>
+            <input id="client-email" name="client-email" type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-row">
+            <label for="project-link">Video or Channel Link</label>
+            <input id="project-link" name="project-link" type="url" placeholder="https://..." required />
+          </div>
+          <div class="form-row">
+            <label for="project-brief">Project Brief</label>
+            <textarea
+              id="project-brief"
+              name="project-brief"
+              rows="5"
+              placeholder="Tell me the title, style, colors, references, and deadline."
+              required
+            ></textarea>
+          </div>
+          <button class="button primary" type="submit">Save Details</button>
+        </form>
+
+        <aside class="payment-methods">
+          <div class="payment-card hot-card">
+            <div>
+              <span class="step-header-label" style="background: rgba(255, 255, 255, 0.15); color: white;">Step 2</span>
+              <span style="display: block; margin-top: 4px;">Payment Method</span>
+            </div>
+            <h2>Pay Azaan with UPI</h2>
+            <p>
+              Scan the barcode or tap the UPI button. After payment, continue to WhatsApp and
+              send the screenshot.
+            </p>
+            <div class="upi-meta">
+              <span>UPI ID</span>
+              <strong>azaann@fam</strong>
+            </div>
+            <figure class="qr-frame">
+              <img src="assets/payment-qr.png" alt="Azaan UPI payment barcode" />
+              <figcaption>Scan this barcode from any UPI app.</figcaption>
+            </figure>
+            <a class="button primary pay-upi-button" id="pay-upi" href="#">Pay with UPI App</a>
+          </div>
+          <div class="payment-card">
+            <div>
+              <span class="step-header-label">Step 3</span>
+              <span style="display: block; margin-top: 4px;">After Payment</span>
+            </div>
+            <h2>Send proof on WhatsApp</h2>
+            <p>
+              This option unlocks after you confirm the UPI payment is done. Your selected plan
+              and project details will be added to the WhatsApp message automatically.
+            </p>
+            <button class="button paid-button" id="payment-done" type="button" disabled>
+              I have completed the payment
+            </button>
+            <button class="button whatsapp-button is-hidden" id="whatsapp-confirm" type="button">
+              I have paid, continue to WhatsApp
+            </button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="payment.js"></script>
+  </body>
+</html>

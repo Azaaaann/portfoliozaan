@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denzi | Thumbnail Designer</title>
+    <meta
+      name="description"
+      content="Denzi's responsive portfolio for custom thumbnails, creator visuals, pricing plans, and contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">DZ</span>
+        <span>Denzi</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="is-active" href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#work">Work</a>
+        <a href="#plans">Plans</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <span class="bulb" aria-hidden="true">
+            <span class="bulb-glass"></span>
+            <span class="bulb-base"></span>
+            <span class="bulb-rays"></span>
+          </span>
+          <span class="theme-label">Light</span>
+        </button>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-grid page-section" id="home">
+        <div class="hero-copy scroll-3d">
+          <p class="intro-line">Hello, I'm Denzi</p>
+          <h1>Your professional <span class="gradient-text">thumbnail designer</span></h1>
+          <p>
+            I design bold YouTube, Instagram, and social media visuals with sharp text,
+            clean focus, and strong creator branding.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#plans">View Plans</a>
+            <a class="button ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="portrait-wrap scroll-3d" aria-label="Portrait of Denzi">
+          <div class="halo"></div>
+          <div class="portrait-logo">
+            <img src="assets/portrait.png" alt="Denzi portrait" />
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-panel page-section" id="profile" aria-labelledby="profile-title">
+        <div class="scroll-3d">
+          <p class="section-label">Profile Description</p>
+          <h2 id="profile-title">
+            Professional thumbnail designer focused on delivering clean, impactful visuals that
+            drive results.
+          </h2>
+        </div>
+        <div class="profile-content scroll-3d">
+          <p>
+            I help new and growing creators build thumbnails that feel polished, readable, and
+            made for quick attention. Every design is shaped around the topic, audience, emotion,
+            and platform size.
+          </p>
+          <dl class="bio-list">
+            <div>
+              <dt>Name</dt>
+              <dd>Denzi</dd>
+            </div>
+            <div>
+              <dt>Date of Birth</dt>
+              <dd>November 5, 2008</dd>
+            </div>
+            <div>
+              <dt>Country</dt>
+              <dd>India</dd>
+            </div>
+            <div>
+              <dt>Speciality</dt>
+              <dd>Thumbnail Design</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="services section-grid page-section" aria-labelledby="services-title">
+        <div class="scroll-3d">
+          <p class="section-label">What I Make</p>
+          <h2 id="services-title">Thumbnails, social creatives, and visual identity pieces.</h2>
+        </div>
+        <div class="service-list">
+          <article class="scroll-3d">
+            <span>01</span>
+            <h3>YouTube Thumbnails</h3>
+            <p>Bold text, strong contrast, expressive composition, and CTR-focused layout.</p>
+          </article>
+          <article class="scroll-3d">
+            <span>02</span>
+            <h3>Social Media Posters</h3>
+            <p>Clean visuals for Instagram, creator announcements, reels, and profile updates.</p>
+          </article>
+          <article class="scroll-3d">
+            <span>03</span>
+            <h3>Creator Branding</h3>
+            <p>Consistent colors, text treatments, and visual systems across repeated posts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="plans page-section" id="plans" aria-labelledby="plans-title">
+        <div class="section-heading scroll-3d">
+          <p class="section-label">Plans</p>
+          <h2 id="plans-title">Pick the package that fits your next upload.</h2>
+        </div>
+        <div class="plan-grid">
+          <article class="plan-card tilt-card scroll-3d" data-plan="Starter Plan" data-price="Rs. 99">
+            <div class="plan-top">
+              <h3>Starter Plan</h3>
+              <p>Perfect for new creators and quick projects.</p>
+            </div>
+            <strong>Rs. 99</strong>
+            <ul>
+              <li>1 Custom Thumbnail</li>
+              <li>1 Revision</li>
+              <li>High-Quality JPG/PNG</li>
+              <li>Fast Delivery</li>
+              <li>Clean &amp; Eye-Catching Design</li>
+              <li>Suitable for YouTube, Instagram &amp; Social Media</li>
+            </ul>
+            <button class="get-button" type="button">GET</button>
+          </article>
+
+          <article class="plan-card featured tilt-card scroll-3d" data-plan="Standard Plan" data-price="Rs. 499">
+            <div class="plan-top">
+              <h3>Standard Plan</h3>
+              <p>Ideal for growing creators who need consistent branding.</p>
+            </div>
+            <strong>Rs. 499</strong>
+            <ul>
+              <li>3 Custom Thumbnails</li>
+              <li>3 Revisions</li>
+              <li>High-Quality JPG/PNG</li>
+              <li>Better Visual Effects &amp; Text Styling</li>
+              <li>Thumbnail Optimization for Higher CTR</li>
+              <li>Priority Support</li>
+              <li>Consistent Brand Look Across Thumbnails</li>
+            </ul>
+            <button class="get-button" type="button">GET</button>
+          </article>
+
+          <article class="plan-card tilt-card scroll-3d" data-plan="Premium Plan" data-price="Rs. 999">
+            <div class="plan-top">
+              <h3>Premium Plan</h3>
+              <p>Best for serious creators who want maximum quality and flexibility.</p>
+            </div>
+            <strong>Rs. 999</strong>
+            <ul>
+              <li>5 Custom Thumbnails</li>
+              <li>Unlimited Revisions</li>
+              <li>Premium Quality Design</li>
+              <li>Advanced Editing &amp; Visual Effects</li>
+              <li>Custom Branding Elements</li>
+              <li>CTR-Focused Design Strategy</li>
+              <li>Priority Delivery</li>
+              <li>Dedicated Support Until Satisfaction</li>
+            </ul>
+            <button class="get-button" type="button">GET</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Interactive Before/After Showcase Section -->
+      <section class="before-after page-section" id="comparison" aria-labelledby="comparison-title">
+        <div class="section-heading scroll-3d">
+          <p class="section-label">The Polish</p>
+          <h2 id="comparison-title">See the difference quality design makes.</h2>
+        </div>
+        <div class="comparison-container scroll-3d">
+          <div class="ba-slider">
+            <!-- Before Image (Dull Concept) -->
+            <img class="ba-image ba-before" src="assets/minecraft-before.png" alt="Raw unstyled Minecraft layout concept" />
+            <!-- After Image (Polished High-Impact) -->
+            <img class="ba-image ba-after" src="assets/minecraft-after.png" alt="Finished professional Denzi Minecraft thumbnail" />
+            
+            <!-- Label Badges -->
+            <span class="ba-label ba-label-before">Before (Raw Concept)</span>
+            <span class="ba-label ba-label-after">After (Denzi Polish)</span>
+            
+            <!-- Handle -->
+            <div class="ba-handle">
+              <div class="ba-handle-button">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="8 17 3 12 8 7"></polyline>
+                  <polyline points="16 17 21 12 16 7"></polyline>
+                </svg>
+              </div>
+            </div>
+            
+            <!-- Slider range input control -->
+            <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Before/After drag slider" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Portfolio Section -->
+      <section class="work page-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading scroll-3d">
+          <p class="section-label">My Projects</p>
+          <h2 id="work-title">Proven high-CTR creator thumbnails.</h2>
+        </div>
+        <div class="project-open scroll-3d">
+          <article class="project-card tilt-card" data-plan="Premium Plan" data-price="Rs. 999">
+            <img src="assets/minecraft-after.png" alt="Minecraft survival YouTube thumbnail" />
+            <div class="project-card-overlay">
+              <span class="project-badge">Gaming</span>
+              <h3>100 Days Survival Challenge</h3>
+              <div class="project-stats">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.5 4.5L21.75 7.5M21.75 7.5H14M21.75 7.5v7.75" />
+                </svg>
+                <span>CTR Improvement: +14.2%</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card tilt-card" data-plan="Standard Plan" data-price="Rs. 499">
+            <img src="assets/work-podcast.png" alt="Professional podcast talk show thumbnail" />
+            <div class="thumbnail-text-overlay">
+              <span class="thumbnail-word yellow">THE DEEP</span>
+              <span class="thumbnail-word white">TALK</span>
+            </div>
+            <div class="project-card-overlay">
+              <span class="project-badge">Podcast</span>
+              <h3>The Deep Talk - Interview Series</h3>
+              <div class="project-stats">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.5 4.5L21.75 7.5M21.75 7.5H14M21.75 7.5v7.75" />
+                </svg>
+                <span>CTR Improvement: +12.4%</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card tilt-card" data-plan="Premium Plan" data-price="Rs. 999">
+            <img src="assets/work-documentary.png" alt="Cinematic travel and history documentary thumbnail" />
+            <div class="thumbnail-text-overlay">
+              <span class="thumbnail-word white">LOST</span>
+              <span class="thumbnail-word red">CIV</span>
+            </div>
+            <div class="project-card-overlay">
+              <span class="project-badge">Documentary</span>
+              <h3>Lost Civ - Historical Investigation</h3>
+              <div class="project-stats">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.5 4.5L21.75 7.5M21.75 7.5H14M21.75 7.5v7.75" />
+                </svg>
+                <span>CTR Improvement: +15.8%</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-grid page-section" id="contact" aria-labelledby="contact-title">
+        <div class="scroll-3d">
+          <p class="section-label">Contact</p>
+          <h2 id="contact-title">Ready for your next thumbnail?</h2>
+        </div>
+        <div class="contact-card scroll-3d">
+          <a href="mailto:axaaann07@gmail.com">axaaann07@gmail.com</a>
+        </div>
+      </section>
+
+      <section class="faq page-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading scroll-3d">
+          <p class="section-label">FAQ</p>
+          <h2 id="faq-title">Quick answers before you order.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="scroll-3d" open>
+            <summary>What do I need to send before you start?</summary>
+            <p>Share your video title, topic, preferred style, reference thumbnails, and any images or logo files you want included.</p>
+          </details>
+          <details class="scroll-3d">
+            <summary>Which file formats will I receive?</summary>
+            <p>You will receive high-quality JPG or PNG files suitable for YouTube, Instagram, and social media posting.</p>
+          </details>
+          <details class="scroll-3d">
+            <summary>Can you match my existing branding?</summary>
+            <p>Yes. The Standard and Premium plans are best when you want a consistent brand look across multiple thumbnails.</p>
+          </details>
+          <details class="scroll-3d">
+            <summary>How do revisions work?</summary>
+            <p>Revision count depends on the plan. Premium includes unlimited revisions until the design feels right for your project.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <div class="plan-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-page" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close plan page" data-close-modal>Close</button>
+        <p class="section-label">Selected Plan</p>
+        <h2 id="modal-title">Starter Plan</h2>
+        <strong id="modal-price">Rs. 99</strong>
+        <p id="modal-description">
+          Send your brief to Denzi and mention this plan name. Your order details can be confirmed over email.
+        </p>
+        <a class="button primary" id="modal-mail" href="mailto:axaaann07@gmail.com">Continue by Email</a>
+      </section>
+    </div>
+
+    <footer>
+      <p>2026 Denzi. Thumbnail design portfolio.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
